@@ -1,3 +1,7 @@
+## What is 'coronaCrawler'?
+
+코로나19에 대한 국내 질병관리본부 보도자료 데이터를 크롤링하는 도구 (Python 코드) 및 크롤링 결과 파일
+
 ## SOURCE OF DATA
 
 질병관리본부 보도자료 / https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015
