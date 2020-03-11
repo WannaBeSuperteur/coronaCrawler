@@ -15,7 +15,7 @@
 
 <strong>[주의사항] 질병관리본부 보도자료의 양식이 계속 일정하지 않은 경우, 최신 데이터를 크롤링한 결과가 질병관리본부 자료의 데이터와 다를 수 있음</strong>
 
-Required: Python 3.7.4
+> Required: Python 3.7.4, BeautifulSoup
 
 질병관리본부 보도자료 / https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015 를 크롤링하여 다음과 같은 형식의 result data로 나타냄.
 * 1열: 날짜시간 (yyMMddhh 형식 - 예시: 20031200은 2020년 03월 12일 00시를 의미)
