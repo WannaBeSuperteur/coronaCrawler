@@ -40,7 +40,9 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             valueList.append(a)
         except:
             if a == '-': valueList.append(0)
-            if a == ' ' and daegu: valueList.append(0)
+            elif a == ' ' and daegu: valueList.append(0)
+            elif len(a) >= 1:
+                if a[len(a)-1] == '*' and int(time) >= 20031200: valueList.append(str(a[:len(a)-1]))
 
     print('')
     print('# VALUE LIST: LENGTH' + str(len(valueList)) + ' #')
