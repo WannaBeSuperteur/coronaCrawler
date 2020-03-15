@@ -68,7 +68,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
     ###  2~ 8열: 확진합계(=격리해제+격리중+사망), 격리해제, 격리중, 사망, 검사합계(=검사중+음성), 검사중, 음성 (전국 기준)
     
     if int(time) >= 20022016: # 2020.02.20 16시 이후의 data 이면
-        if time == '20031400': # 2020.03.14 00시 이후의 data 이면
+        if int(time) >= 20031400: # 2020.03.14 00시 이후의 data 이면
             resultAppend += str(valueList[30]) + ' ' + str(valueList[31]) + ' ' + str(valueList[32]) + ' ' + str(valueList[33]) + ' '
             resultAppend += str(valueList[34]+valueList[35]) + ' ' + str(valueList[34]) + ' ' + str(valueList[35]) + ' '
         elif time == '20030109': # 2020.03.01 09시의 data 이면
