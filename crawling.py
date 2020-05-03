@@ -101,7 +101,23 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
         # 27~44열: 지역별 격리해제(순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
         # 45~62열: 지역별 사망자수(순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
 
-        if time == '20041900' or time == '20042400' or time == '20042500' or time == '20042600':
+        if time == '20050300':
+
+            # 9~16열: 지역별 격리중  (순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
+            for j in range(37, 49): resultAppend += str(valueList[j]) + ' '
+            resultAppend += '15 '
+            for j in range(49, 53): resultAppend += str(valueList[j]) + ' '
+            resultAppend += str(valueList[53]) + ' '
+
+            # 27~44열: 지역별 격리해제(순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
+            for j in range(55, 72): resultAppend += str(valueList[j]) + ' '
+            resultAppend += str(valueList[72]) + ' '
+
+            # 45~62열: 지역별 사망자수(순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
+            for j in range(74, 91): resultAppend += str(valueList[j]) + ' '
+            resultAppend += str(valueList[91]) + ' '
+
+        elif time == '20041900' or time == '20042400' or time == '20042500' or time == '20042600':
 
             # 9~16열: 지역별 격리중  (순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
             for j in range(37, 54): resultAppend += str(valueList[j]) + ' '
