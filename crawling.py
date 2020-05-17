@@ -118,7 +118,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             resultAppend += str(valueList[91]) + ' '
 
         elif (time == '20041900' or time == '20042400' or time == '20042500' or time == '20042600' or time == '20050800'
-             or time == '20050900' or time == '20051000' or time == '20051100' or time == '20051300' or time == '20051500' or time == '20051600'):
+             or time == '20050900' or time == '20051000' or time == '20051100' or time == '20051300' or time == '20051500' or time == '20051600' or time == '20051700'):
 
             # 9~16열: 지역별 격리중  (순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
             for j in range(37, 54): resultAppend += str(valueList[j]) + ' '
@@ -204,7 +204,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
         # 63~80열: 지역별 합계    (순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
         #                 (=격리중+격리해제+사망자수)
         if (time == '20041900' or time == '20042400' or time == '20042500' or time == '20042600' or time == '20050800'
-            or time == '20050900' or time == '20051000' or time == '20051100' or time == '20051300' or time == '20051500' or time == '20051600'):
+            or time == '20050900' or time == '20051000' or time == '20051100' or time == '20051300' or time == '20051500' or time == '20051600' or time == '20051700'):
             
             for j in range(94, 111): resultAppend += str(valueList[j]) + ' '
             resultAppend += str(valueList[111]) + '#'
