@@ -218,6 +218,10 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
         elif int(time) >= 20040400: # 2020.04.04 0시 이후의 data이면
             for j in range(93, 110): resultAppend += str(valueList[j]) + ' '
             resultAppend += str(valueList[110]) + '#'
+
+        elif int(time) >= 20033000: # 2020.03.30 0시 이후의 data이면
+            for j in range(101, 118): resultAppend += str(valueList[j]) + ' '
+            resultAppend += str(valueList[118]) + '#'
             
         elif int(time) >= 20031600: # 2020.03.16 0시 이후의 data이면
             for j in range(100, 117): resultAppend += str(valueList[j]) + ' '
