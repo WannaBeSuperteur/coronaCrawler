@@ -121,7 +121,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
              or time == '20050900' or time == '20051000' or time == '20051100' or time == '20051300' or time == '20051500'
              or time == '20051600' or time == '20051700' or time == '20051900' or time == '20052000' or time == '20052200'
              or time == '20052400' or time == '20052700' or time == '20052800' or time == '20052900' or time == '20053000'
-             or time == '20060400' or time == '20060500' or time == '20060600' or time == '20060700' or time == '20060800'):
+             or time == '20060400' or time == '20060500' or time == '20060600' or time == '20060700' or time == '20060800' or time == '20061100'):
 
             # 9~16열: 지역별 격리중  (순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
             for j in range(37, 54): resultAppend += str(valueList[j]) + ' '
@@ -134,6 +134,20 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             # 45~62열: 지역별 사망자수(순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
             for j in range(75, 92): resultAppend += str(valueList[j]) + ' '
             resultAppend += str(valueList[92]) + ' '
+
+        elif (time == '20061000'): # 2020.06.10 00시의 data이면
+
+            # 9~16열: 지역별 격리중  (순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
+            for j in range(38, 55): resultAppend += str(valueList[j]) + ' '
+            resultAppend += str(valueList[55]) + ' '
+
+            # 27~44열: 지역별 격리해제(순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
+            for j in range(57, 74): resultAppend += str(valueList[j]) + ' '
+            resultAppend += str(valueList[74]) + ' '
+            
+            # 45~62열: 지역별 사망자수(순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
+            for j in range(76, 93): resultAppend += str(valueList[j]) + ' '
+            resultAppend += str(valueList[93]) + ' '
 
         elif int(time) >= 20040400: # 2020.04.04 00시 이후의 data이면
 
@@ -210,10 +224,14 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             or time == '20050900' or time == '20051000' or time == '20051100' or time == '20051300' or time == '20051500'
             or time == '20051600' or time == '20051700' or time == '20051900' or time == '20052000' or time == '20052200'
             or time == '20052400' or time == '20052700' or time == '20052800' or time == '20052900' or time == '20053000'
-            or time == '20060400' or time == '20060500' or time == '20060600' or time == '20060700' or time == '20060800'):
+            or time == '20060400' or time == '20060500' or time == '20060600' or time == '20060700' or time == '20060800' or time == '20061100'):
             
             for j in range(94, 111): resultAppend += str(valueList[j]) + ' '
             resultAppend += str(valueList[111]) + '#'
+
+        elif (time == '20061000'): # 2020.06.10 00시의 data이면
+            for j in range(95, 112): resultAppend += str(valueList[j]) + ' '
+            resultAppend += str(valueList[112]) + '#'
             
         elif int(time) >= 20040400: # 2020.04.04 0시 이후의 data이면
             for j in range(93, 110): resultAppend += str(valueList[j]) + ' '
