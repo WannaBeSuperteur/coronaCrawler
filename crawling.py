@@ -136,6 +136,20 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             for j in range(75, 92): resultAppend += str(valueList[j]) + ' '
             resultAppend += str(valueList[92]) + ' '
 
+        elif (time == '20061800'): # 2020.06.18 00시의 data이면
+
+            # 9~16열: 지역별 격리중  (순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
+            for j in range(40, 57): resultAppend += str(valueList[j]) + ' '
+            resultAppend += str(valueList[57]) + ' '
+
+            # 27~44열: 지역별 격리해제(순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
+            for j in range(59, 76): resultAppend += str(valueList[j]) + ' '
+            resultAppend += str(valueList[76]) + ' '
+            
+            # 45~62열: 지역별 사망자수(순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
+            for j in range(78, 95): resultAppend += str(valueList[j]) + ' '
+            resultAppend += str(valueList[95]) + ' '
+
         elif (time == '20061000'): # 2020.06.10 00시의 data이면
 
             # 9~16열: 지역별 격리중  (순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
@@ -230,6 +244,10 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             
             for j in range(94, 111): resultAppend += str(valueList[j]) + ' '
             resultAppend += str(valueList[111]) + '#'
+
+        elif (time == '20061800'): # 2020.06.18 00시의 data이면
+            for j in range(97, 114): resultAppend += str(valueList[j]) + ' '
+            resultAppend += str(valueList[114]) + '#'
 
         elif (time == '20061000'): # 2020.06.10 00시의 data이면
             for j in range(95, 112): resultAppend += str(valueList[j]) + ' '
