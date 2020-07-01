@@ -123,7 +123,8 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
              or time == '20052400' or time == '20052700' or time == '20052800' or time == '20052900' or time == '20053000'
              or time == '20060400' or time == '20060500' or time == '20060600' or time == '20060700' or time == '20060800'
              or time == '20061100' or time == '20061300' or time == '20061400' or time == '20061500' or time == '20062100'
-             or time == '20062200' or time == '20062400' or time == '20062600' or time == '20062700' or time == '20062800' or time == '20062900' or time == '20063000'):
+             or time == '20062200' or time == '20062400' or time == '20062600' or time == '20062700' or time == '20062800'
+             or time == '20062900' or time == '20063000' or time == '20070100'):
 
             # 9~16열: 지역별 격리중  (순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
             for j in range(37, 54): resultAppend += str(valueList[j]) + ' '
@@ -270,7 +271,8 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             or time == '20052400' or time == '20052700' or time == '20052800' or time == '20052900' or time == '20053000'
             or time == '20060400' or time == '20060500' or time == '20060600' or time == '20060700' or time == '20060800'
             or time == '20061100' or time == '20061300' or time == '20061400' or time == '20061500' or time == '20062100'
-            or time == '20062200' or time == '20062400' or time == '20062600' or time == '20062700' or time == '20062800' or time == '20062900' or time == '20063000'):
+            or time == '20062200' or time == '20062400' or time == '20062600' or time == '20062700' or time == '20062800'
+            or time == '20062900' or time == '20063000' or time == '20070100'):
             
             for j in range(94, 111): resultAppend += str(valueList[j]) + ' '
             resultAppend += str(valueList[111]) + '#'
