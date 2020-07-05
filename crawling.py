@@ -68,7 +68,10 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
     ###  2~ 8열: 확진합계(=격리해제+격리중+사망), 격리해제, 격리중, 사망, 검사합계(=검사중+음성), 검사중, 음성 (전국 기준)
     
     if int(time) >= 20022016: # 2020.02.20 16시 이후의 data 이면
-        if int(time) >= 20031400: # 2020.03.14 00시 이후의 data 이면
+        if int(time) == 20070400: # 2020.07.04 00시의 data 이면
+            resultAppend += str(valueList[31]) + ' ' + str(valueList[32]) + ' ' + str(valueList[33]) + ' ' + str(valueList[34]) + ' '
+            resultAppend += str(valueList[35]+valueList[36]) + ' ' + str(valueList[35]) + ' ' + str(valueList[36]) + ' '
+        elif int(time) >= 20031400: # 2020.03.14 00시 이후의 data 이면
             resultAppend += str(valueList[30]) + ' ' + str(valueList[31]) + ' ' + str(valueList[32]) + ' ' + str(valueList[33]) + ' '
             resultAppend += str(valueList[34]+valueList[35]) + ' ' + str(valueList[34]) + ' ' + str(valueList[35]) + ' '
         elif time == '20030109': # 2020.03.01 09시의 data 이면
@@ -124,7 +127,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
              or time == '20060400' or time == '20060500' or time == '20060600' or time == '20060700' or time == '20060800'
              or time == '20061100' or time == '20061300' or time == '20061400' or time == '20061500' or time == '20062100'
              or time == '20062200' or time == '20062400' or time == '20062600' or time == '20062700' or time == '20062800'
-             or time == '20062900' or time == '20063000' or time == '20070100' or time == '20070200' or time == '20070300'):
+             or time == '20062900' or time == '20063000' or time == '20070100' or time == '20070200' or time == '20070300' or time == '20070400'):
 
             # 9~16열: 지역별 격리중  (순서: 전국 서울 부산 대구 인천 광주 대전 울산 세종 경기 강원 충북 충남 전북 전남 경북 경남 제주)
             for j in range(37, 54): resultAppend += str(valueList[j]) + ' '
@@ -272,7 +275,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             or time == '20060400' or time == '20060500' or time == '20060600' or time == '20060700' or time == '20060800'
             or time == '20061100' or time == '20061300' or time == '20061400' or time == '20061500' or time == '20062100'
             or time == '20062200' or time == '20062400' or time == '20062600' or time == '20062700' or time == '20062800'
-            or time == '20062900' or time == '20063000' or time == '20070100' or time == '20070200' or time == '20070300'):
+            or time == '20062900' or time == '20063000' or time == '20070100' or time == '20070200' or time == '20070300' or time == '20070400'):
             
             for j in range(94, 111): resultAppend += str(valueList[j]) + ' '
             resultAppend += str(valueList[111]) + '#'
