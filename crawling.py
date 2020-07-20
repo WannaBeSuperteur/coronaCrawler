@@ -54,8 +54,8 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
         val2 = valueList[83]
         val3 = valueList[85]
         result = str(time) + ' ' + str(val0) + ' ' + str(val1) + ' ' + str(val2) + ' ' + str(val3) + ' '
-        for i in range(75): result += 'N '
-        result += 'N#'
+        for i in range(74): result += '0 '
+        result += '0#'
         continue
     
     # append to result
