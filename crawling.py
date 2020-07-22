@@ -34,6 +34,9 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
         
         for j in range(17):
             if a == areaList[j]: areaExist.append(a)
+
+        if a[len(a)-2:] == '**': a = a[:len(a)-2]
+        elif a[len(a)-3:] == '** ': a = a[:len(a)-3]
             
         try:
             a = int(a)
@@ -42,17 +45,24 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             if a == '-': valueList.append(0)
             elif a == ' ' and daegu: valueList.append(0)
             elif len(a) >= 2:
-                if a[len(a)-1] == '*' and int(time) >= 20031200: valueList.append(str(a[:len(a)-1]))
+                if a[len(a)-1] == '*' and int(time) >= 20031200:
+                    valueList.append(str(a[:len(a)-1]))
 
     print('')
     print('# VALUE LIST: LENGTH' + str(len(valueList)) + ' #')
     print(valueList)
 
     if int(time) >= 20072000: # 2020.07.20 00시 이후의 data 이면
-        val0 = valueList[38] + valueList[67]
-        val1 = valueList[82]
-        val2 = valueList[83]
-        val3 = valueList[85]
+        if time == '20072200': # 2020.07.22 00시의 data 이면
+            val0 = valueList[38] + valueList[69]
+            val1 = valueList[84]
+            val2 = valueList[85]
+            val3 = valueList[87]
+        else:
+            val0 = valueList[38] + valueList[67]
+            val1 = valueList[82]
+            val2 = valueList[83]
+            val3 = valueList[85]
         result += str(time) + ' ' + str(val0) + ' ' + str(val1) + ' ' + str(val2) + ' ' + str(val3) + ' '
         for i in range(74): result += '0 '
         result += '0#'
