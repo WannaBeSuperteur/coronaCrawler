@@ -58,6 +58,11 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             val1 = valueList[84]
             val2 = valueList[85]
             val3 = valueList[87]
+        elif time == '20072400': # 2020.07.24 00시의 data 이면
+            val0 = valueList[37] + valueList[66]
+            val1 = valueList[81]
+            val2 = valueList[82]
+            val3 = valueList[84]
         else:
             val0 = valueList[38] + valueList[67]
             val1 = valueList[82]
