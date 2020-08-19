@@ -58,7 +58,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             val1 = valueList[84]
             val2 = valueList[85]
             val3 = valueList[87]
-        elif time == '20081100' or time == '20081400':
+        elif time == '20081100' or time == '20081400' or time == '20081900':
             val0 = valueList[39] + valueList[71]
             val1 = valueList[86]
             val2 = valueList[87]
