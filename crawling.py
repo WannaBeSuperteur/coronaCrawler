@@ -50,21 +50,30 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
 
     print('')
     print('# VALUE LIST: LENGTH' + str(len(valueList)) + ' #')
-    print(valueList)
+    print(valueList[:20])
+    print(valueList[20:40])
+    print(valueList[40:60])
+    print(valueList[60:80])
+    print(valueList[80:])
 
     if int(time) >= 20072000: # 2020.07.20 00시 이후의 data 이면
         if time == '20090200': # 2020.09.02 00시의 data 이면
-            val0 = valueList[39] + valueList[71]
-            val1 = valueList[88]
-            val2 = valueList[89]
-            val3 = valueList[91]
-        elif time == '20082100': # 2020.08.21 00시의 data 이면
+            val0 = valueList[39] + valueList[69]
+            val1 = valueList[84]
+            val2 = valueList[85]
+            val3 = valueList[87]
+        elif time == '20082800' or time == '20082900':
+            val0 = valueList[38] + valueList[67]
+            val1 = valueList[82]
+            val2 = valueList[83]
+            val3 = valueList[85]
+        elif time == '20082100' or time == '20083000' or time == '20083100' or time == '20090100':
             val0 = valueList[39] + valueList[70]
             val1 = valueList[85]
             val2 = valueList[86]
             val3 = valueList[88]
         elif (time == '20082000' or time == '20082200' or time == '20082300' or time == '20082400' or time == '20082500' or
-              time == '20083000' or time == '20083100' or time == '20090100'):
+              time == '20083000' or time == '20083100' or time == '20090300'):
             val0 = valueList[39] + int(valueList[71])
             val1 = valueList[87]
             val2 = valueList[88]
@@ -90,7 +99,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             val2 = valueList[86]
             val3 = valueList[88]
         elif (time == '20072200' or time == '20073000' or time == '20073100' or time == '20080300' or time == '20080400' or
-              time == '20080600' or time == '20080700' or time == '20081000' or time == '20082600' or time == '20082700' or time == '20082800' or time == '20082900'):
+              time == '20080600' or time == '20080700' or time == '20081000' or time == '20082600' or time == '20082700'):
             val0 = valueList[38] + valueList[69]
             val1 = valueList[84]
             val2 = valueList[85]
