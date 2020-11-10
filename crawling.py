@@ -67,7 +67,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             val1 = valueList[93]
             val2 = valueList[94]
             val3 = valueList[96]
-        elif time == '20110300': # 2020.11.03 00시의 data 이면
+        elif time == '20110300' or time == '20111000':
             val0 = valueList[39] + valueList[70]
             val1 = valueList[95]
             val2 = valueList[96]
