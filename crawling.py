@@ -57,12 +57,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
     print(valueList[80:])
 
     if int(time) >= 20072000: # 2020.07.20 00시 이후의 data 이면
-        if time == '20121400': # 2020.12.14 00시의 data 이면
-            val0 = int(valueList[38]) + valueList[68]
-            val1 = valueList[99]
-            val2 = valueList[100]
-            val3 = valueList[102]
-        elif time == '20121100': # 2020.12.11 00시의 data 이면
+        if time == '20121100': # 2020.12.11 00시의 data 이면
             val0 = int(valueList[38]) + valueList[67]
             val1 = valueList[99]
             val2 = valueList[100]
@@ -72,7 +67,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             val1 = valueList[101]
             val2 = valueList[102]
             val3 = valueList[104]
-        elif time == '20120800': # 2020.12.08 00시의 data 이면
+        elif time == '20120800' or time == '20121500':
             val0 = valueList[38] + valueList[67]
             val1 = valueList[95]
             val2 = valueList[96]
@@ -102,8 +97,8 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             val1 = 0
             val2 = 0
             val3 = 0
-        elif time == '20112900': # 2020.11.29 00시의 data 이면
-            val0 = valueList[38] + valueList[68]
+        elif time == '20112900' or time == '20121400':
+            val0 = int(valueList[38]) + valueList[68]
             val1 = valueList[101]
             val2 = valueList[102]
             val3 = valueList[104]
