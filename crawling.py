@@ -92,7 +92,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리본�
             val1 = valueList[90]
             val2 = valueList[91]
             val3 = valueList[93]
-        elif time == '20120200' or time == '20120600':
+        elif time == '20120200' or time == '20120600' or time == '20122100':
             val0 = valueList[38] + valueList[67]
             val1 = valueList[94]
             val2 = valueList[95]
