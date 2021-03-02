@@ -54,10 +54,16 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리청 �
     print(valueList[20:40])
     print(valueList[40:60])
     print(valueList[60:80])
-    print(valueList[80:])
+    print(valueList[80:100])
+    print(valueList[100:])
 
     if int(time) >= 20072000: # 2020.07.20 00시 이후의 data 이면
-        if time == '21030100': # 2021.03.01 00시의 data 이면
+        if time == '21030200': # 2021.03.02 00시의 data 이면
+            val0 = valueList[38] + valueList[69]
+            val1 = valueList[94]
+            val2 = valueList[95]
+            val3 = valueList[97]
+        elif time == '21030100': # 2021.03.01 00시의 data 이면
             val0 = valueList[38] + valueList[69]
             val1 = valueList[95]
             val2 = valueList[96]
