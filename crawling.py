@@ -13,18 +13,26 @@ result = '' # 전체 데이터를 저장
 
 areaList = ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주']
 
-for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리청 보도자료 링크에 있는 자료에 대하여 
-    link = linkList[i].split(' ')[0]
-    time = linkList[i].split(' ')[1].split('\n')[0]
+for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리청 보도자료 링크에 있는 자료에 대하여
 
-    print('')
-    print('### LINK: ' + str(link) + ' ###')
-    html = urlopen(link)
-    bsObject = BeautifulSoup(html, "html.parser")
+    # repeat until successful
+    while True:
+        try:
+            link = linkList[i].split(' ')[0]
+            time = linkList[i].split(' ')[1].split('\n')[0]
 
-    allSpan = bsObject.find_all('span')
-    valueList = []
-    areaExist = []
+            print('')
+            print('### LINK: ' + str(link) + ' ###')
+            html = urlopen(link)
+            bsObject = BeautifulSoup(html, "html.parser")
+
+            allSpan = bsObject.find_all('span')
+            valueList = []
+            areaExist = []
+
+            break
+        except:
+            pass
 
     daegu = False
     
@@ -250,7 +258,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리청 �
             val2 = valueList[96]
             val3 = valueList[98]
         elif (time == '20110500' or time == '20111200' or time == '20120300' or time == '20121700' or time == '20122000' or
-              time == '21021200' or time == '21021500' or time == '21030300' or time == '21030400' or time == '21031300' or time == '21031800'):
+              time == '21021200' or time == '21021500' or time == '21030300' or time == '21030400' or time == '21031300' or time == '21031800' or time == '21032700'):
             val0 = int(valueList[38]) + valueList[67]
             val1 = valueList[93]
             val2 = valueList[94]
