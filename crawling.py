@@ -30,6 +30,8 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리청 �
             valueList = []
             areaExist = []
 
+            assert(len(allSpan) > 0)
+
             break
         except:
             pass
@@ -116,7 +118,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리청 �
             val1 = valueList[89]
             val2 = valueList[90]
             val3 = valueList[92]
-        elif time == '21020700': # 2021.02.07 00시의 data 이면
+        elif time == '21020700' or time == '21040200':
             val0 = int(valueList[38]) + valueList[67]
             val1 = valueList[102]
             val2 = valueList[103]
