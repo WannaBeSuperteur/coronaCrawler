@@ -68,11 +68,11 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리청 �
     print(valueList[100:])
 
     if int(time) >= 20072000: # 2020.07.20 00시 이후의 data 이면
-        if time == '21040300': # 2021.04.03 00시의 data 이면
-            val0 = valueList[38] + valueList[68]
-            val1 = valueList[96]
-            val2 = valueList[97]
-            val3 = valueList[99]
+        if time == '21040500': # 2021.04.05 00시의 data 이면
+            val0 = valueList[40] + valueList[69]
+            val1 = valueList[97]
+            val2 = valueList[98]
+            val3 = valueList[100]
         elif time == '21033000': # 2021.03.30 00시의 data 이면
             val0 = valueList[38] + valueList[67]
             val1 = valueList[96]
@@ -83,7 +83,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리청 �
             val1 = valueList[98]
             val2 = valueList[99]
             val3 = valueList[101]
-        elif time == '21031100': # 2021.03.11 00시의 data 이면
+        elif time == '21031100' or time == '21040300':
             val0 = valueList[38] + valueList[68]
             val1 = valueList[96]
             val2 = valueList[97]
@@ -184,7 +184,8 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리청 �
             val1 = valueList[101]
             val2 = valueList[102]
             val3 = valueList[104]
-        elif time == '20120800' or time == '20121500' or time == '20122600' or time == '21010100' or time == '21010400' or time == '21022400' or time == '21032400':
+        elif (time == '20120800' or time == '20121500' or time == '20122600' or time == '21010100' or time == '21010400' or
+              time == '21022400' or time == '21032400'):
             val0 = valueList[38] + valueList[67]
             val1 = valueList[95]
             val2 = valueList[96]
