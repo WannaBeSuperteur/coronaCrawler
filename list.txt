@@ -1,8 +1,3 @@
-https://kdca.go.kr/board/board.es?mid=a20501010000&bid=0015&list_no=716536&cg_code=&act=view&nPage=1 21081800
-https://kdca.go.kr/board/board.es?mid=a20501010000&bid=0015&list_no=716530&cg_code=&act=view&nPage=1 21081700
-https://kdca.go.kr/board/board.es?mid=a20501010000&bid=0015&list_no=716524&cg_code=&act=view&nPage=1 21081600
-https://kdca.go.kr/board/board.es?mid=a20501010000&bid=0015&list_no=716520&cg_code=&act=view&nPage=1 21081500
-https://kdca.go.kr/board/board.es?mid=a20501010000&bid=0015&list_no=716516&cg_code=&act=view&nPage=1 21081400
 https://kdca.go.kr/board/board.es?mid=a20501010000&bid=0015&list_no=716498&cg_code=&act=view&nPage=1 21081300
 https://kdca.go.kr/board/board.es?mid=a20501010000&bid=0015&list_no=716478&cg_code=&act=view&nPage=1 21081200
 https://kdca.go.kr/board/board.es?mid=a20501010000&bid=0015&list_no=716467&cg_code=&act=view&nPage=1 21081100
