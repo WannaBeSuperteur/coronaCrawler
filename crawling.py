@@ -91,7 +91,7 @@ for i in range(len(linkList)): # list.txt 파일에 있는 각 질병관리청 �
             val1 = valueList[142]
             val2 = valueList[143]
             val3 = valueList[145]
-        elif time == '21090600': # 2021.09.06 00시의 data 이면
+        elif time == '21090600' or time == '21091300':
             val0 = valueList[232] + valueList[261]
             val1 = valueList[291]
             val2 = valueList[292]
